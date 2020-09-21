@@ -3,7 +3,7 @@
 
 The goal of the game is to score as many points as possible by eating the fruits.
 
-
+![](screen.png)
 ### Requirements
 - Python 3
 

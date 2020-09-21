@@ -5,9 +5,6 @@ from fruit import Fruit
 from text import Text
 import datetime
 
-
-
-
 class Game(object):
 
     def __init__(self):
@@ -22,7 +19,7 @@ class Game(object):
         # crating screen and loading textures
         self.screen = pygame.display.set_mode((self.width, self.height))
         pygame.display.set_caption("Snake by Lukasz Ciesluk")
-        self.background = pygame.image.load("background.jpg").convert()
+        self.background = pygame.image.load("images/background.jpg").convert()
 
         # ticking variables
         self.clock = pygame.time.Clock()
@@ -83,6 +80,7 @@ class Game(object):
 
             elif event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
                 self.snake.grow()
+                self.score += 10
 
     def ticking(self):
 

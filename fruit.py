@@ -15,7 +15,7 @@ class Fruit(object):
         self.fruit = pygame.Rect(self.x, self.y, self.w, self.h)
         self.apple = False  # False == there is no apple on screen, other function have to generate it
 
-        self.fruit_skin = pygame.image.load('fruit.jpg').convert()
+        self.fruit_skin = pygame.image.load('images/fruit.jpg').convert()
         self.fruit_skin = pygame.transform.scale(self.fruit_skin, (self.h, self.w))
 
     # put the fruit into a random coordinates and check if they aren't the same as snake position

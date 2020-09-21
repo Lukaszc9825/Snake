@@ -24,9 +24,9 @@ class Snake(object):
         self.body_count = 2
 
         # loading snake textures
-        self.head_skin = pygame.image.load('head.jpg').convert()
+        self.head_skin = pygame.image.load('images/head.jpg').convert()
         self.head_skin = pygame.transform.scale(self.head_skin, (self.body_h, self.body_w))
-        self.body_skin = pygame.image.load('skin.jpg').convert()
+        self.body_skin = pygame.image.load('images/skin.jpg').convert()
         self.body_skin = pygame.transform.scale(self.body_skin, (self.body_h, self.body_w))
 
     def get_body_h(self):
